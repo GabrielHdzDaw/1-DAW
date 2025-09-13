@@ -1,0 +1,161 @@
+:root {
+  --color-bloque: #333;
+  --color-menu: #444;
+  --color-borde: #555;
+  --color-borde-claro: #ccc;
+  --color-texto: #fff;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: var(--color-bloque);
+  color: var(--color-texto);
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-menu);
+}
+
+nav a {
+  display: block;
+  color: var(--color-texto);
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+main .item {
+  border: 1px solid var(--color-borde-claro);
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+    
+  body{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  header{
+      width: 100%;
+  }
+  footer{
+      width: 100%;
+  }
+  nav{
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+  }
+  main{
+      display: flex;
+      flex-direction: row;
+      margin-top: auto;
+      margin-bottom: auto;
+      width: auto;
+      width: calc(100% - 150px);
+  }
+ #seccion4{
+  width: 70%;
+ }
+ 
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header,
+  footer {
+    background-color: var(--color-bloque);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-menu);
+  }
+
+  nav a {
+    display: block;
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-borde);
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main .item {
+    border: 1px solid var(--color-borde-claro);
+    padding: 1rem;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header,
+  footer {
+    background-color: var(--color-bloque);
+    color: var(--color-texto);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-menu);
+  }
+
+  nav a {
+    display: block;
+    color: var(--color-texto);
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-borde);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .item {
+    border: 1px solid var(--color-borde-claro);
+    padding: 1rem;
+  }
+
+  #seccion4 {
+    order: -1;
+  }
+}

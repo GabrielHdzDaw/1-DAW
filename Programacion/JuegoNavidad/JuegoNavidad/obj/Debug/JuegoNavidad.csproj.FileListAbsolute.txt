@@ -1,0 +1,33 @@
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\JuegoNavidad.exe.config
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\JuegoNavidad.exe
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\JuegoNavidad.pdb
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.csproj.AssemblyReference.cache
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.exe
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.pdb
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\bin\Debug\JuegoNavidad.exe.config
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\bin\Debug\JuegoNavidad.exe
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\bin\Debug\JuegoNavidad.pdb
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.csproj.AssemblyReference.cache
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.csproj.CoreCompileInputs.cache
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.exe
+C:\Users\Estudiant\Documents\Visual Studio 2022\JuegoNavidad\JuegoNavidad\obj\Debug\JuegoNavidad.pdb
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\barRebound.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\brickRebound.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\gameOver.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\menuAccept.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\menuSelect.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\title2.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\title1.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\textClickSound.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\potionSound.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\magicHit.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\meleeHit2.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\meleeHit.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\missHit.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\title1LowVolume.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\thunderSound.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\insertCoin.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\powerOut.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\switch.wav
+C:\Users\gabri\source\repos\JuegoNavidad\JuegoNavidad\bin\Debug\Sounds\beepBoop.wav

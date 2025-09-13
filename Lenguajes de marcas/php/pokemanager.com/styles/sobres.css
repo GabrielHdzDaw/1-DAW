@@ -1,0 +1,91 @@
+.sobres-contenedor {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.sobres-contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.sobres-contenedor form {
+    display: inline-block;
+}
+
+.img-sobre {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.sobre {
+    animation: levitar 5s ease-in-out infinite;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.animacion-sobre {
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    animation: flip 2s cubic-bezier(.25, .1, .25, 1) forwards;
+}
+
+.sobre:hover {
+    animation: hoverSobre 0.1s forwards;
+}
+
+.sobres-formulario button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+@keyframes hoverSobre {
+    0% {
+
+        transform: rotate(0deg);
+    }
+
+    50% {
+
+        transform: rotate(-15deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes levitar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes flip {
+    from {
+        transform: rotateY(0deg) scale(1);
+    }
+
+    to {
+        transform: rotateY(2160deg) scale(1.5);
+    }
+}

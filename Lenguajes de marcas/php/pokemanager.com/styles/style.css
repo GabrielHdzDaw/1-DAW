@@ -1,0 +1,182 @@
+:root {
+    --main-color: #f8c351;
+    --accent-color: orange;
+    --button-color: #f88418;
+    --error-color: rgb(255, 157, 157);
+}
+
+@font-face {
+    font-family: 'PokemonFont';
+    src: url('../fonts/pokemon-emerald.otf') format('truetype');
+}
+
+.error {
+    border-radius: 20px;
+    border: 2px solid red;
+    background-color: var(--error-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.error-image {
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+body {
+    font-family: 'PokemonFont', sans-serif;
+    background-color: var(--main-color);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: var(--accent-color);
+}
+
+.dynamic-header {
+    position: relative;
+    height: 20vh;
+    overflow: hidden;
+    background-color: var(--main-color);
+    background-image: url("../img/header_bg.png"), linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--main-color) 70%);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    transition: background-position 60s ease-in-out;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-usuario-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    z-index: 2;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.logout-a {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 3;
+    white-space: nowrap;
+}
+
+.nav-usuario-contenedor:hover .logout-a {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-usuario-nombre {
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+}
+
+.img-perfil-nav {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: white;
+    margin: 5px;
+}
+
+button:hover {
+    transition: 0.3s ease;
+    background-color: #ffffff;
+    color: black;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+}
+
+.logo {
+    width: 250px;
+    margin: 10px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.05);
+    filter: drop-shadow(9px 9px 9px rgba(0, 0, 0, 0.5));
+}
+
+.formulario-login {
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.formulario-login input {
+    padding: 7px;
+    margin: 5px 0;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.info {
+    background-color: white;
+    border: 3px solid greenyellow;
+    border-radius: 20px;
+    font-family: 'PokemonFont', sans-serif;
+    font-size: 1.2em;
+    width: 60%;
+    padding: 20px;
+    margin: 20px auto;
+}

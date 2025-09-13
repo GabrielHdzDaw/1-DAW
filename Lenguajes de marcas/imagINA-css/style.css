@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Cambiar colores en base al tema preferido */
+:root {
+  --background-color: light-dark(#c2e890, #242b1b);
+  --background-color2: light-dark(#9cbb75, #495737);
+  --headings-color: light-dark(#a9d96f, #87ae57);
+  --text-color: light-dark(#212f10, #99da49);
+  --links-color: light-dark(#66a815, #bbff68);
+  --blocks-color1: light-dark(#c0d2ab, #52594a);
+  --blocks-color2: light-dark(#71904b, #546b38);
+  --nav-li-color: light-dark(#29410f, #546b38);
+}
+
+/* Cambiar a tema oscuro cuando #cambiar-tema está marcado */
+body:has(#cambiar-tema:checked) {
+  --background-color: #242b1b;
+  --background-color2: #495737;
+  --headings-color: #87ae57;
+  --text-color: #99da49;
+  --links-color: #bbff68;
+  --blocks-color1: #52594a;
+  --blocks-color2: #546b38;
+  --nav-li-color: #546b38;
+}
+
+/* Cambiar a tema claro cuando #cambiar-tema está marcado */
+body:has(#cambiar-tema:checked) {
+  --background-color: #c2e890;
+  --background-color2: #9cbb75;
+  --headings-color: #a9d96f;
+  --text-color: #212f10;
+  --links-color: #66a815;
+  --blocks-color1: #c0d2ab;
+  --blocks-color2: #71904b;
+  --nav-li-color: #29410f;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  color-scheme: light dark;
+}
+
+header {
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  z-index: 10;
+}
+
+header a {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+header a:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+header img {
+  width: 25%;
+}
+
+nav {
+  margin-right: 20px;
+  padding: 10px;
+  background-color: var(--blocks-color1);
+  box-shadow: 3px 5px 5px black;
+  border-radius: 10px;
+}
+
+nav ul {
+  position: absolute;
+  top: 45px;
+  right: 35px;
+  transform: scale(1, 0);
+  transform-origin: top center;
+  transition: transform 0.2s;
+}
+
+nav:hover ul {
+  transform: scale(1, 1);
+  transition: transform 0.2s;
+}
+
+nav li {
+  list-style: none;
+  display: block;
+  text-decoration: none;
+}
+
+nav li a {
+  text-decoration: none;
+  background-color: var(--nav-li-color);
+  padding: 20px;
+  border-radius: 10px;
+  display: block;
+  border: black 2px solid;
+  transition: 0.2s;
+}
+
+nav li a:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--headings-color) 90%,
+    var(--headings-color)
+  );
+  transition: 0.2s;
+}
+
+h1,
+h2 {
+  color: var(--headings-color);
+  background-color: var(--blocks-color1);
+  text-align: center;
+  justify-content: center;
+  text-shadow: 0px 3px 5px black;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+quote {
+  text-align: center;
+  display: block;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 2.5rem;
+  text-shadow: 0px 3px 5px black;
+}
+
+a {
+  color: var(--links-color);
+}
+
+p {
+  font-size: 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 70%;
+}
+
+figure {
+  background-color: var(--blocks-color1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vh;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+form input,
+textarea,
+button {
+  border-radius: 10px;
+  border: var(--links-color) 2px solid;
+  background-color: var(--background-color2);
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin: 5px;
+  padding: 5px;
+  transition: 0.2s;
+}
+
+form input:hover {
+  background-color: color-mix(in srgb, var(--headings-color) 80%, black);
+  transition: 0.2s;
+}
+
+form textarea {
+  background-color: var(--background-color2);
+  transition: 0.2s;
+}
+
+form textarea:hover {
+  background-color: color-mix(in srgb, var(--headings-color) 80%, black);
+  transition: 0.2s;
+}
+
+form button {
+  width: 10rem;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 2px 5px 5px black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: color-mix(in srgb, var(--headings-color) 90%, black 10%);
+  transition: 0.2s;
+}
+
+footer {
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+#color-logo {
+  color: #c2f583;
+}
+
+#lista-fotos {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#lista-fotos img {
+  object-fit: cover;
+  height: 300px;
+  transition: 0.3s;
+  display: block;
+}
+
+#lista-fotos div {
+  border: black solid 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: fit-content;
+}
+
+#lista-fotos img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#tabla-planes {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tabla-planes th:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#tabla-planes th:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#tabla-planes tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+#tabla-planes tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+#tabla-planes tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+#tabla-planes tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+#tabla-planes thead {
+  font-size: 1.5rem;
+}
+
+#tabla-planes th {
+  padding: 10px;
+}
+
+#tabla-planes thead th:nth-child(odd) {
+  background-color: color-mix(in srgb, var(--blocks-color1) 70%, white 30%);
+}
+
+#tabla-planes thead th:nth-child(even) {
+  background-color: color-mix(in srgb, var(--blocks-color2) 70%, white 30%);
+}
+
+#tabla-planes td:nth-child(odd) {
+  background-color: color-mix(in srgb, var(--blocks-color1) 70%, black 30%);
+}
+
+#tabla-planes td:nth-child(even) {
+  background-color: color-mix(in srgb, var(--blocks-color2) 70%, black 30%);
+}
+
+#tabla-planes tbody tr:last-child {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bloque {
+  background-color: var(--blocks-color1);
+  display: flex;
+  align-items: center;
+
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+.claroscuro {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.claroscuro input {
+  display: none;
+}
+
+.claroscuro label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.claroscuro img {
+  width: 25px;
+  height: 25px;
+  transition: opacity 0.3s, transform 0.3s;
+}

@@ -1,0 +1,135 @@
+{
+  "$id": "1",
+  "jugador": {
+    "$id": "2",
+    "$type": "caballero",
+    "x": 41,
+    "y": 132,
+    "ataques": {
+      "$id": "3",
+      "$values": [
+        {
+          "$id": "4",
+          "nombre": "Ataque r\u00E1pido",
+          "dano": 8,
+          "probabilidad": 90
+        },
+        {
+          "$id": "5",
+          "nombre": "Ataque pesado",
+          "dano": 18,
+          "probabilidad": 75
+        },
+        {
+          "$id": "6",
+          "nombre": "Ataque poderoso",
+          "dano": 25,
+          "probabilidad": 50
+        }
+      ]
+    },
+    "inventario": {
+      "$id": "7",
+      "pociones": {
+        "$id": "8",
+        "$values": [
+          {
+            "$id": "9",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          },
+          {
+            "$id": "10",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          },
+          {
+            "$id": "11",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          },
+          {
+            "$id": "12",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          },
+          {
+            "$id": "13",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          },
+          {
+            "$id": "14",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          },
+          {
+            "$id": "15",
+            "curacion": 50,
+            "nombre": "Poci\u00F3n peque\u00F1a",
+            "descripcion": "Poci\u00F3n que cura 50 puntos de vida al que la bebe.",
+            "precio": 10
+          }
+        ]
+      },
+      "armas": {
+        "$id": "16",
+        "$values": [
+          {
+            "$id": "17",
+            "dano": 8,
+            "danoCritico": 12,
+            "probabilidadCritico": 15,
+            "nombre": "Espada corta rota",
+            "descripcion": "Espada que ha visto mejores d\u00EDas",
+            "precio": 0
+          }
+        ]
+      },
+      "objetosClave": {
+        "$id": "18",
+        "$values": [
+          {
+            "$id": "19",
+            "nombre": "Pico de escalada",
+            "descripcion": "Con este pico llegar\u00E1s a lo m\u00E1s alto de la monta\u00F1a del Demonio Malo Mal\u00EDsimo",
+            "precio": 0
+          },
+          {
+            "$id": "20",
+            "nombre": "Pico de escalada",
+            "descripcion": "Con este pico llegar\u00E1s a lo m\u00E1s alto de la monta\u00F1a del Demonio Malo Mal\u00EDsimo",
+            "precio": 0
+          }
+        ]
+      }
+    },
+    "armaEquipada": {
+      "$ref": "17"
+    },
+    "ataqueTotal": 23,
+    "ataqueCriticoTotal": 27,
+    "nombre": "pepe",
+    "sprite": "\r\n  ,   A           {}\r\n / \\, | ,        .--.\r\n|    =|= \u003E      /.--.\\\r\n \\ /\u0060 | \u0060       |====|\r\n  \u0060   |         |\u0060::\u0060|\r\n      |     .-;\u0060\\..../\u0060;_.-^-._\r\n     /\\\\/  /  |...::..|\u0060   :   \u0060|\r\n     |:\u0027\\ |   /\u0027\u0027\u0027::\u0027\u0027|   .:.   |\r\n      \\ /\\;-,/\\   ::  |..:::::..|\r\n      |\\ \u003C\u0060 \u003E  \u003E._::_.| \u0027:::::\u0027 |\r\n      |  \u0060\u0022\u0060  /   ^^  |   \u0027:\u0027   |\r\n      |       |       \\    :    /\r\n      |       |        \\   :   /\r\n      |       |___/\\___|\u0060-.:.-\u0060\r\n      |        \\_ || _/    \u0060\r\n      |        \u003C_ \u003E\u003C _\u003E\r\n      |        |  ||  |\r\n      |        |  ||  |\r\n      |       _\\.:||:./_\r\n      |      /____/\\____\\\r\n",
+    "vida": 28,
+    "vidaMaxima": 120,
+    "ataque": 15,
+    "defensa": 22,
+    "velocidad": 5
+  },
+  "puntuacion": 240,
+  "terminada": true,
+  "creacion": "2025-06-08T17:35:48.9007532+02:00"
+}
